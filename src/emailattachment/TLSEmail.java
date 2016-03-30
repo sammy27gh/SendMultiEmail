@@ -52,7 +52,7 @@ public class TLSEmail {
         
         
         final String fromEmail = "andoh.samuel@gmail.com"; //requires valid gmail id
-        final String password = "ska123456"; // correct password for gmail id
+        final String password = "............"; // correct password for gmail id
         final String toEmail = (keyword); // can be any email id 
         
         System.out.println("TLSEmail Start");
