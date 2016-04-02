@@ -63,7 +63,7 @@ public static void sendAttachmentEmail(Session session, String toEmail, String s
  
          // Second part is attachment
          messageBodyPart = new MimeBodyPart();
-         String filename = "C:\\Users\\samuel.samuel-andoh\\Documents\\NetBeansProjects\\EmailAttachment\\src\\emailattachment\\newfile";
+         String filename = "C:\\Users\\emaildoc\\newfile.txt";
          
          DataSource source = new FileDataSource(filename);
          messageBodyPart.setDataHandler(new DataHandler(source));

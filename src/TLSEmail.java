@@ -30,7 +30,7 @@ public class TLSEmail {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
          //connect to excel sheet
-          File excel = new File("C:\\Users\\samuel.samuel-andoh\\Downloads\\TestData.xlsx");
+          File excel = new File("C:\\Users\\emaildoc\\TestData.xlsx");
           FileInputStream fis = new FileInputStream(excel);
 
                        XSSFWorkbook wb = new XSSFWorkbook(fis);
@@ -52,7 +52,7 @@ public class TLSEmail {
         
         
         final String fromEmail = "andoh.samuel@gmail.com"; //requires valid gmail id
-        final String password = "............"; // correct password for gmail id
+        final String password = "ska123456"; // correct password for gmail id
         final String toEmail = (keyword); // can be any email id 
         
         System.out.println("TLSEmail Start");
@@ -62,6 +62,7 @@ public class TLSEmail {
         props.put("mail.smtp.auth", "true"); //enable authentication
         props.put("mail.smtp.starttls.enable", "true"); //enable STARTTLS
         Authenticator auth;
+        
         auth = new Authenticator() {
             //override the getPasswordAuthentication method
             @Override
